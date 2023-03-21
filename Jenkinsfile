@@ -36,7 +36,7 @@ pipeline {
         stage('Ansible Pull Docker Image') {
             steps {
                 ansiblePlaybook becomeUser: null, colorized: true, disableHostKeyChecking: true, installation: 'Ansible', inventory: 'deploy-docker/inventory',
-                 playbook: 'deploy-docker/Scicalc_deploy.yml', sudoUser: null
+                 playbook: 'deploy-docker/scicalc_deploy.yml', sudoUser: null
 
             }
         }
