@@ -1,0 +1,2 @@
+[localhost]
+wisp ansible_connection=local
