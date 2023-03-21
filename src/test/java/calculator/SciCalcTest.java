@@ -1,8 +1,9 @@
-import calculator.SciCalc;
+package calculator;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-public class CalculatorTest {
+public class SciCalcTest {
+
     private static final double DELTA = 1e-15;
     SciCalc calculator = new SciCalc();
 
@@ -69,6 +70,5 @@ public class CalculatorTest {
         assertNotEquals("Finding square root for False Positive", 2, calculator.squareRoot(36), DELTA);
 
     }
-
 
 }
